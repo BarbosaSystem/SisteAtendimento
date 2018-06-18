@@ -18,11 +18,21 @@
                 </div>
                 <div class="menu">
                    <ul>
-                        <li><a href="#">Atendimentos</a></li>
-                        <li><a href="#">Equipamentos</a></li>
-                        <li><a href="#">Clientes</a></li>
-                        <li><a href="login.html">Usuário</a></li>
-                    </ul>
+                        <li><a href="atendimento.html">Atendimentos</a></li>
+                        <li><a href="CadastroCliente.html">Clientes</a></li>
+                        
+                        <li class='dropdown'>
+                          <a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+                            USUÁRIO <span class='caret'></span>
+                          </a>
+                          <ul class='dropdown-menu'>
+                            <li><a href='/'><i class="fas fa-user"></i> Link</a></li>
+                            <li><a href='/'>Link</a></li>
+                            <li><a href='/'>Link</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="login.html">lOGIN</a></li>
+                    </ul> 
                 </div>
                 <h1>Cadastro do Cliente</h1>
             </div>
@@ -88,8 +98,20 @@
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script>
             $(document).ready( function () {
+
+                // ADD SLIDEDOWN ANIMATION TO DROPDOWN //
+            $('.dropdown').on('show.bs.dropdown', function (e) {
+                $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+            });
+
+            // ADD SLIDEUP ANIMATION TO DROPDOWN //
+            $('.dropdown').on('hide.bs.dropdown', function (e) {
+                $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+            });
+
                 $(".salvar").click( function () {
                     alert("Salvo com sucesso!!");
                 })
