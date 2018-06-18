@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/vendors/plugin.css">
+		<link rel="stylesheet" href="css/style.css">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    </head>
+    <body>
+    	<header class="container">
+            <div class="content">
+                <div class="logo-container">
+                    <a href="index.html"><img src="imagens/Logo.png"></a>
+                </div>
+                <div class="menu">
+                   <ul>
+                        <li><a href="#">Atendimentos</a></li>
+                        <li><a href="#">Equipamentos</a></li>
+                        <li><a href="#">Clientes</a></li>
+                        <li><a href="login.html">Usuário</a></li>
+                    </ul>
+                </div>
+                <h1>Cadastro do Atendimento</h1>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="content">
+                    <div class="Caixa-Cadastro">
+                        <div class="form">
+                            <div class="">
+                                <div class="form-group">
+                                    <!-- <div class="nome">
+                                        <input type="text" placeholder="Nome" class="form-control">
+                                    </div> -->
+                                    <div class="nome">
+                                        <select name="nomes" class="form-control" id="nome">
+                                            <option value="Nome1">Primeiro nome</option>
+                                            <option value="Nome2">Segundo Nome</option>
+                                            <option value="Nome3">Terceiro Nome</option>
+                                            <option value="Nome4">Quarto Nome</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="tipo-atendimento">
+                                        <input type="text" id="tipo-atendimento" placeholder="Tipo de Atendimento" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="tipo-equipamento">
+                                        <input type="text" id="tipo-equipamento" placeholder="Tipo de Equipamento" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="marca">
+                                        <input type="text" id="Marca" placeholder="Marca" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="modelo">
+                                        <input type="text" id="Modelo" placeholder="Modelo" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="descricao">
+                                        <textarea class="form-control" id="descricao" placeholder="Descrição do Problema"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="serv-realizado">
+                                        <textarea class="form-control" id="serv-realizado" placeholder="Serviço Realizado"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="grupBotao">
+                                    <button class="salvar"><i class="far fa-check-circle"></i> Salvar</button>
+                                    <button class="cancelar"><i class="far fa-stop-circle"></i> Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="logo-rodape">
+                <img src="imagens/Logo.png">
+                <p>2018 Direitos Reservados</p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+        <script>
+            $(document).ready( function () {
+                $(".salvar").click( function () {
+                    var nome = $('#nome :selected').text();
+                    alert(nome);
+                });
+            });
+        </script>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+    </body>
+</html>
