@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/vendors/plugin.css">
+		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    </head>
+    <body>
+    	<header class="container">
+            <div class="content">
+                <div class="logo-container">
+<!--                    <a href="index.html"><img src="imagens/Logo.png"></a>-->
+                    
+                </div>
+                <div class="titulo">
+                    <h1>Sistema de Atendimento</h1>
+                </div>
+            </div>
+        </header>
+        <section class="login">
+            <div class="container">
+                <div class="content">
+                    <div class="">
+                        <div class="box-login">
+                            <h1>Área Restrita</h1>
+                            <div class="form-group">
+                                <div class="">
+                                  <!-- <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span> -->
+                                  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="">
+                                  <!-- <span class="input-group-addon" id="basic-addon1"><i class="fa fa-key"></i></span> -->
+                                  <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button id="acessar" class="botao"><i class="fa fa-unlock"></i> Acessar</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="logo-rodape">
+                <img src="imagens/Logo.png">
+                <p>2018 Direitos Reservados</p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+        <script>
+            $(document).ready( function () {
+                $("#acessar").click( function () {
+                    window.location.href = "index.html";
+                })
+            })
+        </script>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+    </body>
+</html>

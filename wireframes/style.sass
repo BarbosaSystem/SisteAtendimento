@@ -1,0 +1,27 @@
+@import "bootstrap"
+$verde: #00434d
+$branco: #fff
+
+.menu-responsivo
+  position: fixed
+  width: 150px
+  height: 100%
+  left: 0
+  top: 0
+  
+  ul
+    li
+      border-bottom: 1px solid $branco
+      a
+        padding: 7px
+        display: block
+        color: $branco
+        
+        &:hover,
+        &:focus
+          background-color: rgba(#fff, .4)
+.layout
+  &.ativo
+    padding-left: 150px
+    
+.toogle
