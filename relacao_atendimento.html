@@ -99,52 +99,42 @@
         <main>
             <div class="container">
                 <div class="content">
-                    <div class="Caixa-Cadastro">
-                        <div class="form">
-                            <div class="">
-                                <div class="form-group">
-                                    <div class="nome">
-                                        <input type="text" placeholder="Nome" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="telefone">
-                                        <input type="text" class="form-control" placeholder="Telefone">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="cep">
-                                        <input type="text" class="form-control" placeholder="Cep" id="Cep">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="logradouro">
-                                        <input type="text" class="form-control" placeholder="Logradouro" id="Logradouro">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="numero">
-                                        <input type="text" class="form-control" placeholder="Num" id="Numero">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="Comp">
-                                        <input type="text" class="form-control" placeholder="Complemento" id="Comp">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="bairro">
-                                        <input type="text" class="form-control" placeholder="Bairro" id="Bairro">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="grupBotao">
-                                    <button class="salvar"><i class="far fa-check-circle"></i> Salvar</button>
-                                    <button class="cancelar"><i class="far fa-stop-circle"></i> Cancelar</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="tabela">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                  <th scope="col">Nome</th>
+                                  <th scope="col">Telefone</th>
+                                  <th scope="col">Data de Chegada</th>
+                                  <th scope="col">Status</th>
+                                  <th scope="col">Opções</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <td scope="row">FULANO DE TAL</td>
+                                  <td>(33) 99999-9999</td>
+                                  <td>18/06/2018</td>
+                                  <td>Concluído</td>
+                                  <td>
+                                    <button class="editar"><span class="fas fa-edit"></span> </button>
+                                    <button class="cancelar"><span class="fas fa-minus-circle"></span></button>
+                                    <button class="detalhes"><span class="fas fa-info"></span></button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row">FULANO DE TAL</td>
+                                  <td>(33) 99999-9999</td>
+                                  <td>18/06/2018</td>
+                                  <td>Concluído</td>
+                                  <td>
+                                    <button class="editar"><span class="fas fa-edit"></span> </button>
+                                    <button class="cancelar"><span class="fas fa-minus-circle"></span></button>
+                                    <button class="detalhes"><span class="fas fa-info"></span></button>
+                                </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

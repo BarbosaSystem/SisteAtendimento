@@ -17,17 +17,82 @@
                 </div>
                 <div class="menu">
                    <ul>
-                        <li><a href="atendimento.html">Atendimentos</a></li>
-                        <li><a href="CadastroCliente.html">Clientes</a></li>
-                        <li><a href="login.html">Usuário</a></li>
-                    </ul> 
-                    <!-- <ul>
-                        <li><a href="#"><img src="imagens/atendimento.jpeg"></a></li>
-                        <li></li>
-                        <li></li>
-                    </ul>-->
+                    <!--ATENDIMENTO-->
+                        <li class='dropdown'>
+                          <a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+                            Atendimentos <span class='caret'></span>
+                          </a>
+                          <ul class='dropdown-menu'>
+                            <li>
+                                <a href='atendimento.html'>
+                                    <span class="atendimento-novo"></span>
+                                    <p>Novo Atendimento</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='relacao_atendimento.html'>
+                                    <span class="atendimento-lista"></span>
+                                    <p>Relação de Atendimentos</p>
+                                </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <!-- CLIENTES -->
+                        <li class='dropdown'>
+                          <a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+                            Clientes <span class='caret'></span>
+                          </a>
+                          <ul class='dropdown-menu'>
+                            <li>
+                                <a href='CadastroCliente.html'>
+                                    <span class="cliente-novo"></span>
+                                    <p>Novo Cliente</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='relacao_cliente.html'>
+                                    <span class="cliente-lista"></span>
+                                    <p>Relação de Clientes</p>
+                                </a>
+                            </li>
+                          </ul>
+                        </li>
+                        
+                        <li class='dropdown'>
+                          <a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+                            USUÁRIO <span class='caret'></span>
+                          </a>
+                          <ul class='dropdown-menu'>
+                            <li>
+                                <a href='#'>
+                                    <span class="usuario-novo"></span>
+                                    <p>Novo Usuário</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#'>
+                                    <span class="usuario-lista"></span>
+                                    <p>Relação de Usuários</p>
+                                </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class='dropdown'>
+                          <a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+                            LOGADO <span class='caret'></span>
+                          </a>
+                          <ul class='dropdown-menu'>
+                            <li>
+                                <a href='#'>
+                                    <span class="logout-icon"></span>
+                                    <p>Sair</p>
+                                </a>
+                            </li>
+                          </ul>
+                        </li>
+                    </ul>
                 </div>
-                <h1>Sistema de Atendimento</h1>
+                <h1>Relação de Clientes</h1>
             </div>
         </header>
         <main>
@@ -63,7 +128,9 @@
                 <p>2018 Direitos Reservados</p>
             </div>
         </footer>
-
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/sistema.js"></script>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->

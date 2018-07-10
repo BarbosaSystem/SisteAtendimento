@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,eAAgB,CACf,OAAO,CAAE,SAAS,CAClB,gBAAgB,CAAE,qBAAoB,CAIrC,yCAAc,CACb,aAAa,CAAE,IAAI,CACnB,aAAa,CAAE,GAAG,CAClB,MAAM,CAAE,IAAI,CACZ,SAAS,CAAE,MAAM",
-"sources": ["../scss/cadastroCliente.scss"],
-"names": [],
-"file": "cadastroCliente.css"
-}
